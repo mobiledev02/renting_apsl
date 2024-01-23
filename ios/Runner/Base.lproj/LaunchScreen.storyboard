@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ydg-fD-yQy"/>
+                        <viewControllerLayoutGuide type="bottom" id="xbc-2k-c8Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashBackground" translatesAutoresizingMaskIntoConstraints="NO" id="vZF-q7-PMd">
+                                <rect key="frame" x="0.0" y="515" width="414" height="381"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="YRO-k0-Ey4">
+                                <rect key="frame" x="122" y="348" width="170" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="7rt-jt-9pb"/>
+                                    <constraint firstAttribute="height" constant="200" id="xjQ-UA-b4N"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vZF-q7-PMd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="LBy-s5-oo9"/>
+                            <constraint firstItem="YRO-k0-Ey4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="NE1-Tn-IUW"/>
+                            <constraint firstItem="vZF-q7-PMd" firstAttribute="top" secondItem="YRO-k0-Ey4" secondAttribute="bottom" constant="-33" id="Olv-Dv-Y9b"/>
+                            <constraint firstAttribute="bottom" secondItem="vZF-q7-PMd" secondAttribute="bottom" id="sHF-sM-9JS"/>
+                            <constraint firstItem="vZF-q7-PMd" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.425" id="wm2-eo-ygb"/>
+                            <constraint firstAttribute="trailing" secondItem="vZF-q7-PMd" secondAttribute="trailing" id="xEk-EK-YA8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="251.11607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppLogo" width="270" height="300"/>
+        <image name="SplashBackground" width="187.5" height="168"/>
+    </resources>
+</document>

@@ -1,0 +1,11 @@
+framework module flutter_braintree {
+  umbrella header "flutter_braintree-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module flutter_braintree.Swift {
+  header "flutter_braintree-Swift.h"
+  requires objc
+}
